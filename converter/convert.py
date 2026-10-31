@@ -81,6 +81,8 @@ ALIASES = {
     "grass_block_side":"textures/blocks/grass_side",
     "short_grass":"textures/blocks/tallgrass",
     "dead_bush":"textures/blocks/deadbush",
+    "tall_seagrass_bottom":"textures/blocks/seagrass_doubletall_bottom_a",
+    "tall_seagrass_top":"textures/blocks/seagrass_doubletall_top_a",
     "lily_pad":"textures/blocks/waterlily",
     "dandelion":"textures/blocks/flower_dandelion",
     "poppy":"textures/blocks/flower_rose",
