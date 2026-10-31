@@ -31,12 +31,6 @@ jobs:
         run: |
           curl -fL --retry 3 "https://raw.githubusercontent.com/Mojang/bedrock-samples/main/resource_pack/textures/terrain_texture.json" -o input/terrain_texture.json
           curl -fL --retry 3 "https://raw.githubusercontent.com/Mojang/bedrock-samples/main/resource_pack/textures/item_texture.json" -o input/item_texture.json
-      - name: Temporary source inspection artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: ChillMod-source-analysis
-          path: input/chillmod.zip
-          retention-days: 1
       - name: Convert Java textures to Bedrock vanilla overrides
         run: python converter/convert.py
       - name: Upload Bedrock pack and conversion report
